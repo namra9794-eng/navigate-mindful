@@ -18,7 +18,7 @@ export type SafetyReport = {
   severity: Severity;
   createdAt: string;
   demo: boolean;
-  imageName?: string;
+  imageName?: string | undefined;
 };
 
 export const CATEGORIES: ReportCategory[] = [

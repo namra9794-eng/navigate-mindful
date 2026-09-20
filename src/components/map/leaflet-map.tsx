@@ -10,10 +10,10 @@ export type MapRoute = {
 
 export type LeafletMapProps = {
   reports: SafetyReport[];
-  routes?: MapRoute[];
-  from?: [number, number];
-  to?: [number, number];
-  height?: string;
+  routes?: MapRoute[] | undefined;
+  from?: [number, number] | undefined;
+  to?: [number, number] | undefined;
+  height?: string | undefined;
 };
 
 export default function LeafletMap({
