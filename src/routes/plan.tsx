@@ -91,7 +91,7 @@ function Planner() {
 
       {result && active && (
         <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
-          <div className="card-soft overflow-hidden p-3">
+          <div className="card-soft self-start overflow-hidden p-3">
             <div className="overflow-hidden rounded-2xl">
               <MapPanel
                 reports={reports}
