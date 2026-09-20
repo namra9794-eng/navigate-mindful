@@ -4,7 +4,7 @@ import type { LeafletMapProps } from "./leaflet-map";
 
 const LeafletMap = lazy(() => import("./leaflet-map"));
 
-function MapSkeleton({ height }: { height?: string }) {
+function MapSkeleton({ height }: { height?: string | undefined }) {
   return (
     <div
       className="flex w-full animate-pulse items-center justify-center rounded-2xl bg-muted text-sm text-muted-foreground"
