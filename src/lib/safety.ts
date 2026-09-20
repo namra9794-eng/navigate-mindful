@@ -195,7 +195,7 @@ export function computeSafety(
     {
       label: "Reported incidents",
       value: Math.min(100, seeded(seed + "incident", 40, 90) + bias),
-      weight: 0.２ as unknown as number,
+      weight: 0.2,
       note: "Accidents and suspicious-activity reports near the path.",
     },
     {
@@ -205,7 +205,6 @@ export function computeSafety(
       note: "How actively this area is reported on and travelled.",
     },
   ];
-  factors[3].weight = 0.2;
 
   const score = Math.round(
     factors.reduce((sum, f) => sum + f.value * f.weight, 0) /
